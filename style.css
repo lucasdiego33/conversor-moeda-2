@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+
+body {
+    background-color: coral;
+}
+
+.logo {
+    width: 180px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 15px;
+   
+}
+
+
+main{
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 12px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 12px 6px 5px gray;
+   
+  
+}
+
+
+label {
+  
+    font-size: 18px;
+    
+}
+
+select,input {
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+    border: 3px solid  coral;
+    margin-bottom: 15px;
+    box-shadow: 4px 6px 5px gray;;
+    
+    
+}
+
+button{
+    width: 100%;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: coral;
+    color: white;
+    font-size: 18px;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-top: 8px;
+    height: 219px;
+   
+
+}
+
+.seta {
+    width: 22px;
+}
+
+
+
