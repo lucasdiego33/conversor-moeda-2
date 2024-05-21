@@ -2,16 +2,23 @@
 
 const botao = document.querySelector(".botao")
   
- 
 
-function converterValues (){
+
+ const converterValues = async  () =>{
      
      const meuValor = document.querySelector(".input").value
      const valor1 = document.querySelector(".valorReal")
      const valor2 = document.querySelector(".valorDolar")
 
-     const dolarToday = 5.20
-     const  converted = meuValor / dolarToday
+     
+
+     
+
+const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(resposta => resposta.json())
+const dolarToday = data.USDBRL.high
+const converted = meuValor / dolarToday;
+
+
 
     valor1.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
